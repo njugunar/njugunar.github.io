@@ -1,0 +1,109 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background: white;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+}
+
+
+@media only screen and (max-width: 415px){
+    body {
+        background-color: #FFFFFF;
+    }
+
+    #photo-section{
+        position:relative;
+        left: 6.4%;
+        top: 3.598%;
+    }
+
+    #photo{
+    
+
+    }
+
+    #pattern-bg{
+        width: 87.2%;
+        height: auto;
+        
+    }
+
+    #quotes{
+        width: 16%;
+        height: auto;
+        position: absolute;
+        top: 52.984%;
+        left:42.13333333%;
+
+    }
+
+    #pattern-curve{
+        width: 76%;
+        height: auto;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    }
+
+    #testimonial{
+        width: 82.93333333%;
+        height: auto;
+        position: absolute;
+        top: 54.57271364%;
+        left: 8.533333333%;
+    }
+
+    #testimonial-text{
+        font-family: inter;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 24px;
+        text-align: center;
+        color:#202047;
+
+    }
+    #name{
+        height: 20px;
+        left: 0%;
+        right: 0%;
+        top: calc(50% - 20px/2 - 10px);
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+        color: #202047;        
+    }
+    #role{
+        position: absolute;
+        height: 20px;
+        left: 5.66%;
+        right: 5.66%;
+        top: calc(50% - 20px/2 + 10px);
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+        color: #B9B9CE;
+
+    }
+}
+
+@media only screen and (max-width: 2560px) and (min-width: 769px){
+    body {
+        background-color:   black;
+
+    }
+}
