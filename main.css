@@ -11,7 +11,7 @@ html{
 body{
     width: 100vw;
     min-height: 100vh;
-    position: relative;
+    /* position: relative; */
 }
 
 
@@ -21,48 +21,59 @@ body{
     }
 
     #photo-section{
-        position:relative;
+        position:absolute;
         left: 6.4%;
         top: 3.598%;
+        width: 87.06666667%;
+        height:46.10194903%;
     }
 
-    #photo{
-    
-
-    }
-
-    #pattern-bg{
-        width: 87.2%;
-        height: auto;
+    #text-section{
+        position:absolute;
+        top:51.87406297%;
+        left:8.533333333%;
+        width: 82.93333333%;
+        height:33.5832084%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
         
     }
 
+    #photo{
+        position:absolute;
+        left: 11.3323124%;
+        top: 9.756097561%;
+        width: 77.79479326%;
+        height: 82.27642276%;
+    }
+
+    #pattern-bg{
+        width: 100%;
+        height: 100%;        
+    }
+
     #quotes{
-        width: 16%;
-        height: auto;
+        width: 19.2926045%;
+        height: 21.92982456%;
         position: absolute;
-        top: 52.984%;
-        left:42.13333333%;
+        top: 0;
+        left:40.35369775%;
 
     }
 
     #pattern-curve{
         width: 76%;
-        height: auto;
+        height: 10.7946027%;
         position: absolute;
         bottom: 0px;
         left: 0px;
     }
 
-    #testimonial{
-        width: 82.93333333%;
-        height: auto;
-        position: absolute;
-        top: 54.57271364%;
-        left: 8.533333333%;
-    }
-
     #testimonial-text{
+        width: 100%;
+        height: auto;
+        align-self: center;
         font-family: inter;
         font-size: 18px;
         font-weight: 300;
@@ -73,8 +84,6 @@ body{
     }
     #name{
         height: 20px;
-        left: 0%;
-        right: 0%;
         top: calc(50% - 20px/2 - 10px);
         font-family: 'Inter';
         font-style: normal;
@@ -85,11 +94,6 @@ body{
         color: #202047;        
     }
     #role{
-        position: absolute;
-        height: 20px;
-        left: 5.66%;
-        right: 5.66%;
-        top: calc(50% - 20px/2 + 10px);
         font-family: 'Inter';
         font-style: normal;
         font-weight: 500;
