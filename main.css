@@ -1,3 +1,8 @@
+:root{
+    --page-height: 667;
+    --page-width: 375;
+}
+
 * { 
     margin: 0;
     padding: 0;
@@ -9,9 +14,8 @@ html{
 }
 
 body{
-    width: 100vw;
-    min-height: 100vh;
-    /* position: relative; */
+    max-width: calc(100vw);
+    max-height: calc(100vh);
 }
 
 
@@ -21,23 +25,30 @@ body{
     }
 
     #photo-section{
+        --section-width: 326.5;
+        --section-height: 307.5;
+        --section-postition-left: 24;
+        --section-postition-right: 24;
         position:absolute;
-        left: 6.4%;
-        top: 3.598%;
-        width: 87.06666667%;
-        height:46.10194903%;
+        left: calc((var(--section-postition-left) / var(--page-width)) * 100%);
+        top: calc((var(--section-postition-right) / var(--page-height)) * 100%);
+        width: calc(var(--section-width) / var(--page-width) * 100%);
+        height:calc(var(--section-height) / var(--page-height) * 100%);
     }
 
     #text-section{
+        --section-width: 311;
+        --section-height: 228;
+        --section-postition-left: 32;
+        --section-postition-top: 364;
         position:absolute;
-        top:51.87406297%;
-        left:8.533333333%;
-        width: 82.93333333%;
-        height:33.5832084%;
+        top: calc(var(--section-postition-top) / var(--page-height) * 100%);
+        left:calc(var(--section-postition-left) / var(--page-width) * 100%);
+        width: calc(var(--section-width) / var(--page-width) * 100%);
+        height:calc(var(--section-height) / var(--page-height) * 100%);
         display: flex;
         flex-flow: column nowrap;
-        justify-content: space-around;
-        
+        justify-content: space-around;        
     }
 
     #photo{
@@ -63,11 +74,15 @@ body{
     }
 
     #pattern-curve{
-        width: 76%;
-        height: 10.7946027%;
+        --section-width: 285;
+        --section-height: 70.59;
+        --section-postition-left: 0;
+        --section-postition-top: 596.35;
+        top: calc(var(--section-postition-top) / var(--page-height) * 100%);
+        left:calc(var(--section-postition-left) / var(--page-width) * 100%);
+        width: calc(var(--section-width) / var(--page-width) * 100%);
+        height:calc(var(--section-height) / var(--page-height) * 100%);
         position: absolute;
-        bottom: 0px;
-        left: 0px;
     }
 
     #testimonial-text{
